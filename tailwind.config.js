@@ -5,8 +5,21 @@ module.exports = {
 	},
 	purge: ["./components/**/*.js", "./pages/**/*.js"],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				cover: "#FFFFFF",
+			},
+			fontFamily: {
+				fira: ['"FiraGO"', "monospaced"],
+				rakkas: ['"Rakkas"', "display"],
+				lora: ['"Lora"', "serif"],
+			},
+			fontSize: {
+				"7xl": "5rem",
+				"8xl": "8rem",
+			},
+		},
 	},
-	variants: {},
+	variants: { animation: ["responsive"] },
 	plugins: [],
 };
